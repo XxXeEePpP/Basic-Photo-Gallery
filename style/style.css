@@ -1,0 +1,66 @@
+.MenuItem {
+    overflow: hidden;
+}
+
+.MenuItem {
+    display: inline;
+    padding-right: 2px;
+}
+
+.RowImg {
+    display: table;
+    table-layout: fixed;
+    border-spacing: 20px;
+}
+
+.ColumnImg {
+    display: table-cell;
+    width: 200px;
+    border: 1px solid;
+    border-color: #ffffff;
+
+}
+
+.ColumnImg:hover {
+    border-color: #a9a9a9;
+}
+
+.Title {
+    font-size: 20px;
+}
+
+.PhotoView > .Title {
+    font-weight: bold;
+}
+
+.Header {
+
+    padding: 10px;
+    background-color: #b3b3b3;
+}
+
+.Footer {
+
+    padding: 20px;
+    background-color: #b3b3b3;
+    text-align: center;
+}
+
+a {
+    color: #000000;
+
+}
+
+.MenuItem > a:hover {
+    color: #474747;
+
+}
+
+.ColumnImg > a {
+    text-decoration: none;
+}
+
+.SortMenu > .MenuItem > a {
+    text-decoration: none;
+    font-weight: bold;
+}
