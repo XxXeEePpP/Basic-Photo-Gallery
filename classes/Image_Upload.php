@@ -97,7 +97,6 @@ class Image_Upload
         $savedImage = IMAGE_DIR . BASE_IMAGE_NAME . $id . '.' . $this->file_type;
         $img = new SimpleImage();
         $img->load($savedImage);
-        $img->load($savedImage);
         $img->resizeToWidth(THUMBNAIL_WIDTH);
         $img->save(IMAGE_DIR . BASE_THUMBNAIL_NAME . $id . '.' . $this->file_type);
     }
