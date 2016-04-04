@@ -8,7 +8,7 @@ include_once('classes' . DIRECTORY_SEPARATOR . 'Image_Upload.php');
 
 $title = 'Качи Снимка';
 Render::header($title);
-Render::menu();
+Render::menu(2);
 
 
 if (isset($_POST['submit']) && isset($_POST['token']) && Verification::verify_token($_POST['token'])) {

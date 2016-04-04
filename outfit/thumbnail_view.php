@@ -1,3 +1,3 @@
-<div class="div class="TableImg">
+<div id="TableImg">
     <?=$thumbnail_list?>
 </div>

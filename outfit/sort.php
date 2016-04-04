@@ -1,4 +1,4 @@
-<div>
+<div id="Sort">
     <ul class="SortMenu">
         <li class="MenuItem">Сортиране:</li>
         <li class="MenuItem"><a href="index.php?sort=title_name&order=asc">Име (&darr;)</a></li>

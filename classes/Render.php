@@ -12,8 +12,12 @@ class Render
         include_once('outfit' . DIRECTORY_SEPARATOR . 'footer.php');
     }
 
-    static function menu()
+    static function menu($selected=0)
     {
+        switch ($selected) {
+            case 1: $select1 = "Selected"; break;
+            case 2: $select2 = "Selected"; break;
+        }
         include_once('outfit' . DIRECTORY_SEPARATOR . 'menu.php');
     }
 
@@ -26,10 +30,10 @@ class Render
     {
         $sql = new SQL();
         $result = $sql->getAllCategories();
-        echo '<select name="category">';
+        echo '<select class="FormBox" name="category">';
 
         foreach ($result as $row) {
-            echo '<option value="' . $row['id_category'] . '">' . $row['name'] . '</option>
+            echo '<option class="FormBox" value="' . $row['id_category'] . '">' . $row['name'] . '</option>
             ';
         }
         echo '</select>';

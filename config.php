@@ -7,7 +7,7 @@ $message = '<p class="error">Системна грешка! Моля свърж�
 $host = 'localhost';
 $db_name = 'photo_gallery';
 $user = 'root';
-$password = '13214';
+$password = '';
 
 //default title name
 $default_title = 'Фото галерия';

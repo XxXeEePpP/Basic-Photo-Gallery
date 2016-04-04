@@ -7,7 +7,7 @@ include_once('classes' . DIRECTORY_SEPARATOR . 'Render.php');
 
 $title = 'Фото Галерия';
 Render::header($title);
-Render::menu();
+Render::menu(1);
 
 if (isset($_GET['submit'])) {
     $search_string = Verification::verify_string($_GET['search']);

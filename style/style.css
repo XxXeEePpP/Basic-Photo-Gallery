@@ -1,16 +1,66 @@
-.MenuItem {
-    overflow: hidden;
+body {
+	margin: 0 auto;
+	width:1110px;
+	background-image: url('background.jpg');
+
 }
 
-.MenuItem {
-    display: inline;
+#Main {
+	background-color: #ffffff;
+	padding-bottom: 10px;
+}
+
+#Menu {
+	background-color: #222222;
+	margin: 0px;
+	padding: 0px;
+	border-top: 1px solid #444444;
+}
+
+ul.MenuList {
+	padding: 0px;
+	margin: 0px;
+	overflow: hidden;
     padding-right: 2px;
 }
 
+li.MenuItem {
+	float: left;
+	list-style-type: none
+}
+
+a.MenuItem {
+	padding: 0px;
+	margin: 0px;
+	background-color: #222222;
+	color: #eeeeee;
+	padding: 12px 12px;
+	display: block;
+	text-decoration: none;
+	text-align: center
+}
+
+a.MenuItem:hover:not(.Selected) {
+    color: #ffffff;
+	background: #444444;
+}
+
+a.Selected {
+	background-color: #1C964D;
+}
+
+#TableImg{
+
+}
+
 .RowImg {
+	padding: 0px;
+	margin: 0px;
+	clear: both;
     display: table;
     table-layout: fixed;
     border-spacing: 20px;
+
 }
 
 .ColumnImg {
@@ -27,22 +77,29 @@
 
 .Title {
     font-size: 20px;
+    padding-bottom: 10px;
 }
 
-.PhotoView > .Title {
+
+.PhotoView .Title {
     font-weight: bold;
 }
 
-.Header {
+.PhotoView {
+	padding: 2px 10px;
+}
 
+.Header {
+	color: #eeeeee;
     padding: 10px;
-    background-color: #b3b3b3;
+    background-color: #222222;
 }
 
 .Footer {
-
+	margin: 0;
     padding: 20px;
-    background-color: #b3b3b3;
+    background-color: #333333;
+    color: #eeeeee;
     text-align: center;
 }
 
@@ -51,16 +108,11 @@ a {
 
 }
 
-.MenuItem > a:hover {
-    color: #474747;
-
-}
-
-.ColumnImg > a {
+.ColumnImg a {
     text-decoration: none;
 }
 
-.SortMenu > .MenuItem > a {
+.SortMenu > .MenuItem a {
     text-decoration: none;
     font-weight: bold;
 }

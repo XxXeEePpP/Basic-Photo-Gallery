@@ -6,6 +6,7 @@
     <title><?=$title?></title>
 </head>
 <body>
-<div class="Header">
-Галерия
-</div>
+<div id="Main">
+	<div class="Header">
+	Галерия
+	</div>
