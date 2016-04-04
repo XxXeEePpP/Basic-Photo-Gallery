@@ -4,9 +4,9 @@
         <?= htmlspecialchars($title_name) ?></span>
     </div>
     <div class="Navigation">
-        <a href="<?= $prev_id ?>">Предишна</a>
+        <a id="prev" href="<?= $prev_id ?>">Предишна</a>
         ||
-        <a href="<?= $next_id ?>">Следваща</a>
+        <a id="next" href="<?= $next_id ?>">Следваща</a>
     </div>
     <div id="Image">
         <img width="100%" src="<?= htmlspecialchars($img_lnk) ?>"/>
