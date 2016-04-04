@@ -6,7 +6,7 @@ body {
 	margin: 0 auto;
 	width:1110px;
 	background-image: url('background.jpg');
-
+	margin-bottom: 10px;
 }
 
 #Main {
